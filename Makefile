@@ -22,7 +22,6 @@ test:
 dist:
 	GOOS=linux   GOARCH=amd64 go build ${LDFLAGS} -o ${BINARY}_linux_amd64 ${COMMAND}
 	GOOS=darwin  GOARCH=amd64 go build ${LDFLAGS} -o ${BINARY}_darwin_amd64 ${COMMAND}
-	GOOS=windows GOARCH=amd64 go build ${LDFLAGS} -o ${BINARY}_windows_amd64.exe ${COMMAND}
 
 clean:
 	rm ${BINARY} || true

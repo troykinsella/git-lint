@@ -15,7 +15,6 @@ deploy:
   file:
     - git-lint_darwin_amd64
     - git-lint_linux_amd64
-    - git-lint_windows_amd64.exe
     - sha256sum.txt
   skip_cleanup: true
   on:
