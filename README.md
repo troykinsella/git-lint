@@ -118,7 +118,7 @@ Here's a summary of supported syntax:
 | 6M            | 6 months (1 year / 2) |
 | 1y            | 1 year (365 days) |
 
-### Running git-lint
+### Running `git-lint`
 
 `git-lint` operates on a locally cloned repository directory.
 Run it like so:
@@ -127,6 +127,17 @@ Run it like so:
 git clone git@github.com/some/repo.git
 cd repo
 git-lint
+```
+
+### Running `git-lint` with Docker
+
+```bash
+docker pull troykinsella/git-lint
+
+git clone git@github.com/some/repo.git
+cd repo
+
+docker run -it --rm -v $PWD:/repo -w /repo troykinsella/git-lint git-lint
 ```
 
 ### Rules
