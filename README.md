@@ -16,7 +16,7 @@ wget -q -O - https://raw.githubusercontent.com/troykinsella/git-lint/master/inst
 Or, run these commands to download and install:
 ```bash
 VERSION=0.0.1
-OS=darwin # or linux, or windows
+OS=darwin # or linux
 curl -SL -o /usr/local/bin/git-lint https://github.com/troykinsella/git-lint/releases/download/v${VERSION}/git-lint_${OS}_amd64
 chmod +x /usr/local/bin/git-lint
 ```
@@ -35,7 +35,7 @@ git-lint -h
 
 ### Requirements
 
-As `git-keep` uses [src-d/go-git](https://github.com/src-d/go-git),
+As `git-lint` uses [src-d/go-git](https://github.com/src-d/go-git),
 it does not rely on `git` being installed.
 
 ### Configuration
